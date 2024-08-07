@@ -1,46 +1,14 @@
-package com.example.lab02.pojo;
+package com.example.lab02.dtos.request;
 
-import javax.persistence.*;
-import java.util.Date;
-
-@Entity
-@Table(name="ContactInformation")
-public class ContactInformation {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @Column(name="personal_phone")
+public class ContactInformationRequest {
     private String personalPhone;
-
-    @Column(name="home_phone")
     private String homePhone;
-
-    @Column(name="email")
     private String email;
-
-    @Column(name="permanent_address")
     private String permanentAddress;
-
-    @Column(name="city")
     private String city;
-
-    @Column(name="district")
     private String district;
-
-    @Column(name="ward")
     private String ward;
-
-    @Column(name="temporary_address")
     private String temporaryAddress;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public String getPersonalPhone() {
         return personalPhone;
@@ -74,11 +42,11 @@ public class ContactInformation {
         this.permanentAddress = permanentAddress;
     }
 
-    public String getProvince() {
+    public String getCity() {
         return city;
     }
 
-    public void setProvince(String province) {
+    public void setCity(String city) {
         this.city = city;
     }
 

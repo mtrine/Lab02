@@ -9,9 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c1d1038-1b83-4aa4-a2f2-253d2ca64204" name="Changes" comment="education information">
+    <list default="true" id="6c1d1038-1b83-4aa4-a2f2-253d2ca64204" name="Changes" comment="education information service,repo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab02/pojo/Aspiration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab02/pojo/Aspiration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/lab02/pojo/ContactInformation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/lab02/pojo/ContactInformation.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +188,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723041654953</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="education information service,repo">
+      <option name="closed" value="true" />
+      <created>1723045025778</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1723045025778</updated>
+    </task>
+    <task id="LOCAL-00003" summary="education information service,repo">
+      <option name="closed" value="true" />
+      <created>1723045078230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1723045078230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -196,6 +212,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="education information" />
-    <option name="LAST_COMMIT_MESSAGE" value="education information" />
+    <MESSAGE value="education information service,repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="education information service,repo" />
   </component>
 </project>
