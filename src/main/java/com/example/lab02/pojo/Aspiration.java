@@ -19,8 +19,8 @@ public class Aspiration {
     @Column(name="desired_workplace")
     private String desiredWorkplace;
 
-    @Column(name="order_request")
-    private String orderRequest;
+    @Column(name="other_request")
+    private String otherRequest;
 
     public double getDesiredSalary() {
         return desiredSalary;
@@ -39,11 +39,11 @@ public class Aspiration {
     }
 
     public String getOrderRequest() {
-        return orderRequest;
+        return otherRequest;
     }
 
     public void setOrderRequest(String orderRequest) {
-        this.orderRequest = orderRequest;
+        this.otherRequest = otherRequest;
     }
 
     public String getDesiredWorkplace() {
