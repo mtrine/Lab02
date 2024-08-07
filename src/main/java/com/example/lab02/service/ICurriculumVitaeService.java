@@ -8,7 +8,7 @@ import java.util.List;
 public interface ICurriculumVitaeService {
     List<CurriculumVitae> findAll();
     CurriculumVitae findById(Long id);
-    void update(CurriculumVitaeRequest curriculumVitae);
+    void update(Long id,CurriculumVitaeRequest curriculumVitae);
     void delete(Long id);
-
+    CurriculumVitae create(CurriculumVitaeRequest curriculumVitae);
 }
