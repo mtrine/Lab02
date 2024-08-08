@@ -38,13 +38,6 @@ public class Aspiration {
         this.desiredStartDate = desiredStartDate;
     }
 
-    public String getOrderRequest() {
-        return otherRequest;
-    }
-
-    public void setOrderRequest(String orderRequest) {
-        this.otherRequest = otherRequest;
-    }
 
     public String getDesiredWorkplace() {
         return desiredWorkplace;
@@ -52,5 +45,13 @@ public class Aspiration {
 
     public void setDesiredWorkplace(String desiredWorkplace) {
         this.desiredWorkplace = desiredWorkplace;
+    }
+
+    public String getOtherRequest() {
+        return otherRequest;
+    }
+
+    public void setOtherRequest(String otherRequest) {
+        this.otherRequest = otherRequest;
     }
 }

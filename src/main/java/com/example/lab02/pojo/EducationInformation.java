@@ -24,7 +24,7 @@ public class EducationInformation {
     @Column(name="major")
     private String major;
 
-    @Column(name="graduation_year")
+    @Column(name="graduate_year")
     private Integer graduateYear;
 
     @Column(name="classification")
