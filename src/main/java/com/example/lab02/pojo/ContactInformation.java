@@ -22,18 +22,26 @@ public class ContactInformation {
     @Column(name="permanent_address")
     private String permanentAddress;
 
-    @Column(name="city")
-    private String city;
+    @Column(name="city_permanent_address")
+    private String cityPermanentAddress;
 
-    @Column(name="district")
-    private String district;
+    @Column(name="district_permanent_address")
+    private String districtPermanentAddress;
 
-    @Column(name="ward")
-    private String ward;
+    @Column(name="ward_permanent_address")
+    private String wardPermanentAddress;
 
     @Column(name="temporary_address")
     private String temporaryAddress;
 
+    @Column(name="city_temporary_address")
+    private String cityTemporaryAddress;
+
+    @Column(name="district_temporary_address")
+    private String districtTemporaryAddress;
+
+    @Column(name="ward_temporary_address")
+    private String wardTemporaryAddress;
     public Long getId() {
         return id;
     }
@@ -74,35 +82,59 @@ public class ContactInformation {
         this.permanentAddress = permanentAddress;
     }
 
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String province) {
-        this.city = city;
-    }
-
-    public String getDistrict() {
-        return district;
-    }
-
-    public void setDistrict(String district) {
-        this.district = district;
-    }
-
-    public String getWard() {
-        return ward;
-    }
-
-    public void setWard(String ward) {
-        this.ward = ward;
-    }
-
     public String getTemporaryAddress() {
         return temporaryAddress;
     }
 
     public void setTemporaryAddress(String temporaryAddress) {
         this.temporaryAddress = temporaryAddress;
+    }
+
+    public String getCityPermanentAddress() {
+        return cityPermanentAddress;
+    }
+
+    public void setCityPermanentAddress(String cityPermanentAddress) {
+        this.cityPermanentAddress = cityPermanentAddress;
+    }
+
+    public String getDistrictPermanentAddress() {
+        return districtPermanentAddress;
+    }
+
+    public void setDistrictPermanentAddress(String districtPermanentAddress) {
+        this.districtPermanentAddress = districtPermanentAddress;
+    }
+
+    public String getWardPermanentAddress() {
+        return wardPermanentAddress;
+    }
+
+    public void setWardPermanentAddress(String wardPermanentAddress) {
+        this.wardPermanentAddress = wardPermanentAddress;
+    }
+
+    public String getWardTemporaryAddress() {
+        return wardTemporaryAddress;
+    }
+
+    public void setWardTemporaryAddress(String wardTemporaryAddress) {
+        this.wardTemporaryAddress = wardTemporaryAddress;
+    }
+
+    public String getDistrictTemporaryAddress() {
+        return districtTemporaryAddress;
+    }
+
+    public void setDistrictTemporaryAddress(String districtTemporaryAddress) {
+        this.districtTemporaryAddress = districtTemporaryAddress;
+    }
+
+    public String getCityTemporaryAddress() {
+        return cityTemporaryAddress;
+    }
+
+    public void setCityTemporaryAddress(String cityTemporaryAddress) {
+        this.cityTemporaryAddress = cityTemporaryAddress;
     }
 }

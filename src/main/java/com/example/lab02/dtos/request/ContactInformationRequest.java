@@ -5,10 +5,61 @@ public class ContactInformationRequest {
     private String homePhone;
     private String email;
     private String permanentAddress;
-    private String city;
-    private String district;
-    private String ward;
+    private String cityPermanentAddress;
+    private String districtPermanentAddress;
+    private String wardPermanentAddress;
     private String temporaryAddress;
+    private String cityTemporaryAddress;
+    private String districtTemporaryAddress;
+    private String wardTemporaryAddress;
+
+    public String getWardTemporaryAddress() {
+        return wardTemporaryAddress;
+    }
+
+    public void setWardTemporaryAddress(String wardTemporaryAddress) {
+        this.wardTemporaryAddress = wardTemporaryAddress;
+    }
+
+    public String getDistrictTemporaryAddress() {
+        return districtTemporaryAddress;
+    }
+
+    public void setDistrictTemporaryAddress(String districtTemporaryAddress) {
+        this.districtTemporaryAddress = districtTemporaryAddress;
+    }
+
+    public String getCityTemporaryAddress() {
+        return cityTemporaryAddress;
+    }
+
+    public void setCityTemporaryAddress(String cityTemporaryAddress) {
+        this.cityTemporaryAddress = cityTemporaryAddress;
+    }
+
+    public String getWardPermanentAddress() {
+        return wardPermanentAddress;
+    }
+
+    public void setWardPermanentAddress(String wardPermanentAddress) {
+        this.wardPermanentAddress = wardPermanentAddress;
+    }
+
+    public String getDistrictPermanentAddress() {
+        return districtPermanentAddress;
+    }
+
+    public void setDistrictPermanentAddress(String districtPermanentAddress) {
+        this.districtPermanentAddress = districtPermanentAddress;
+    }
+
+    public String getCityPermanentAddress() {
+        return cityPermanentAddress;
+    }
+
+    public void setCityPermanentAddress(String cityPermanentAddress) {
+        this.cityPermanentAddress = cityPermanentAddress;
+    }
 
     public String getPersonalPhone() {
         return personalPhone;
@@ -40,30 +91,6 @@ public class ContactInformationRequest {
 
     public void setPermanentAddress(String permanentAddress) {
         this.permanentAddress = permanentAddress;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getDistrict() {
-        return district;
-    }
-
-    public void setDistrict(String district) {
-        this.district = district;
-    }
-
-    public String getWard() {
-        return ward;
-    }
-
-    public void setWard(String ward) {
-        this.ward = ward;
     }
 
     public String getTemporaryAddress() {
