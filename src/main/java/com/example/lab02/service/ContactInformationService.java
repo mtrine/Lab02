@@ -19,7 +19,21 @@ public class ContactInformationService implements IContactInformationService {
     }
 
     @Override
-    public void update(ContactInformationRequest ContactInformation) {
+    public void update(Long id, ContactInformationRequest request) {
+        ContactInformation contactInformation = ContactInformationRepository.findById(id).get();
+        contactInformation.setPersonalPhone(request.getPersonalPhone());
+        contactInformation.setHomePhone(request.getHomePhone());
+        contactInformation.setEmail(request.getEmail());
+        contactInformation.setPermanentAddress(request.getPermanentAddress());
+        contactInformation.setCityPermanentAddress(contactInformation.getCityPermanentAddress());
+        contactInformation.setDistrictPermanentAddress(contactInformation.getDistrictPermanentAddress());
+        contactInformation.setWardPermanentAddress(contactInformation.getWardPermanentAddress());
+        contactInformation.setTemporaryAddress(request.getTemporaryAddress());
+        contactInformation.setCityTemporaryAddress(contactInformation.getCityTemporaryAddress());
+        contactInformation.setDistrictTemporaryAddress(contactInformation.getDistrictTemporaryAddress());
+        contactInformation.setWardTemporaryAddress(contactInformation.getWardTemporaryAddress());
+        ContactInformationRepository.save(contactInformation);
+
 
     }
 
@@ -29,7 +43,20 @@ public class ContactInformationService implements IContactInformationService {
     }
 
     @Override
-    public ContactInformation create(ContactInformationRequest ContactInformation) {
-        return new ContactInformation();
+    public ContactInformation create(ContactInformationRequest request) {
+        ContactInformation contactInformation = new ContactInformation();
+        contactInformation.setPersonalPhone(request.getPersonalPhone());
+        contactInformation.setHomePhone(request.getHomePhone());
+        contactInformation.setEmail(request.getEmail());
+        contactInformation.setPermanentAddress(request.getPermanentAddress());
+        contactInformation.setCityPermanentAddress(contactInformation.getCityPermanentAddress());
+        contactInformation.setDistrictPermanentAddress(contactInformation.getDistrictPermanentAddress());
+        contactInformation.setWardPermanentAddress(contactInformation.getWardPermanentAddress());
+        contactInformation.setTemporaryAddress(request.getTemporaryAddress());
+        contactInformation.setCityTemporaryAddress(contactInformation.getCityTemporaryAddress());
+        contactInformation.setDistrictTemporaryAddress(contactInformation.getDistrictTemporaryAddress());
+        contactInformation.setWardTemporaryAddress(contactInformation.getWardTemporaryAddress());
+        return ContactInformationRepository.save(contactInformation);
+
     }
 }

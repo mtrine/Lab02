@@ -8,7 +8,7 @@ import java.util.List;
 public interface IAspirationService{
     List<Aspiration> findAll();
     Aspiration findById(Long id);
-    void update(AspirationRequest Aspiration);
+    void update(Long id,AspirationRequest Aspiration);
     void delete(Long id);
     Aspiration create(AspirationRequest Aspiration);
 }

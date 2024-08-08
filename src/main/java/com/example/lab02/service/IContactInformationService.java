@@ -8,7 +8,7 @@ import java.util.List;
 public interface IContactInformationService{
     List<ContactInformation> findAll();
     ContactInformation findById(Long id);
-    void update(ContactInformationRequest ContactInformation);
+    void update(Long id, ContactInformationRequest ContactInformation);
     void delete(Long id);
     ContactInformation create(ContactInformationRequest ContactInformation);
 }

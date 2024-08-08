@@ -19,17 +19,41 @@ public class EducationInformationService implements IEducationInformationService
     }
 
     @Override
-    public void update(EducationInformationRequest EducationInformation) {
+    public void update(Long id, EducationInformationRequest request) {
+        EducationInformation educationInformation = findById(id);
+        educationInformation.setEducationLevel(request.getEducationLevel());
+        educationInformation.setAcademicLevel(request.getAcademicLevel());
+        educationInformation.setUniversity(request.getUniversity());
+        educationInformation.setMajor(request.getMajor());
+        educationInformation.setGraduateYear(request.getGraduateYear());
+        educationInformation.setClassification(request.getClassification());
+        educationInformation.setForeignLanguage(request.getForeignLanguage());
+        educationInformation.setForeignLevel(educationInformation.getForeignLanguage());
+        educationInformation.setForeignGrades(educationInformation.getForeignGrades());
 
+        EducationInformationRepository.save(educationInformation);
+        
     }
 
     @Override
     public void delete(Long id) {
-
+        EducationInformation educationInformation = findById(id);
+        EducationInformationRepository.delete(educationInformation);
     }
 
     @Override
-    public EducationInformation create(EducationInformationRequest EducationInformation) {
-        return new EducationInformation();
+    public EducationInformation create(EducationInformationRequest request) {
+        EducationInformation educationInformation = new EducationInformation();
+        educationInformation.setEducationLevel(request.getEducationLevel());
+        educationInformation.setAcademicLevel(request.getAcademicLevel());
+        educationInformation.setUniversity(request.getUniversity());
+        educationInformation.setMajor(request.getMajor());
+        educationInformation.setGraduateYear(request.getGraduateYear());
+        educationInformation.setClassification(request.getClassification());
+        educationInformation.setForeignLanguage(request.getForeignLanguage());
+        educationInformation.setForeignLevel(educationInformation.getForeignLanguage());
+        educationInformation.setForeignGrades(educationInformation.getForeignGrades());
+
+       return EducationInformationRepository.save(educationInformation);
     }
 }
