@@ -74,11 +74,11 @@ public class ContactInformation {
         this.permanentAddress = permanentAddress;
     }
 
-    public String getProvince() {
+    public String getCity() {
         return city;
     }
 
-    public void setProvince(String province) {
+    public void setCity(String province) {
         this.city = city;
     }
 
